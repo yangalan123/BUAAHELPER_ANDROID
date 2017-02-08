@@ -11,6 +11,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import java.lang.reflect.Field;
 import java.util.List;
 /**
  * Created by alan_yang on 2017/1/21.
@@ -83,12 +85,22 @@ public class BUAA_RecyclerViewAdapter extends RecyclerView.Adapter<BUAA_Recycler
             final ListItemViewHolder viewHolder, int position) {
         viewHolder.itemForList = items.get(position);
         viewHolder.label.setText(viewHolder.itemForList.label);
+        if (viewHolder.itemForList.isread()) viewHolder.label.setTextColor(Color.GRAY);
         String dateStr = DateUtils.formatDateTime(
                 viewHolder.label.getContext(),
                 viewHolder.itemForList.ReceiveTime.getTime(),
                 DateUtils.FORMAT_ABBREV_ALL);
         viewHolder.dateTime.setText(dateStr);
-
+        try {
+            Field field = R.mipmap.class.getDeclaredField(viewHolder.itemForList.getPathToImage());
+            field.setAccessible(true);
+            R.mipmap mipmap = new R.mipmap();
+            Object oId = field.get(mipmap);
+            int id =  (Integer) oId;
+            viewHolder.icon.setImageResource(id);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

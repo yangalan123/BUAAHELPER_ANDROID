@@ -32,6 +32,11 @@ public class NoticeListFragment extends Fragment implements BUAA_RecyclerViewAda
     private ContentProvider provider,trash;
     private ItemTouchHelper itemTouchHelper;
     private BUAAItemTouchHelperCallback buaaItemTouchHelperCallback;
+    private SQLiteUtils sqLiteUtils;
+
+    public void setSqLiteUtils(SQLiteUtils sqLiteUtils) {
+        this.sqLiteUtils = sqLiteUtils;
+    }
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -157,7 +162,7 @@ public class NoticeListFragment extends Fragment implements BUAA_RecyclerViewAda
         //Bundle bundle = new Bundle();
        // bundle.putInt("ID",itemForList.getId() );
         //bundle.putInt();
-
+        sqLiteUtils.ReadNotificationByID(itemForList.getId());
         Intent intent = new Intent(getActivity(), DetailActivity.class);
         intent.putExtra("ID",itemForList.getId() );
         intent.putExtra("Position",pos);
@@ -197,10 +202,18 @@ public class NoticeListFragment extends Fragment implements BUAA_RecyclerViewAda
             //得到type为TRASH的ContentProvider
             BUAAContentProvider garbageCollector = (BUAAContentProvider)trash;
             //这是目前默认的删除方式，记得保留这几行
+            String type = ((BUAAContentProvider)provider).getType();
+            if (type != BUAAContentProvider.Trash)
+            {
+                sqLiteUtils.HideNotificationByID(itemForList.getId());
+            }
+            else
+                sqLiteUtils.SeekNotificationByID(itemForList.getId());
             if (provider instanceof BUAAContentProvider)
             {
                 ((BUAAContentProvider)provider).deleteDataInList(position);
             }
+
         }
     }
 

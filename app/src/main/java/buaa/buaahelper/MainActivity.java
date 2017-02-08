@@ -34,13 +34,13 @@ import org.json.JSONObject;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, NoticeListFragment.OnListFragmentInteractionListener, View.OnClickListener {
     private ImageButton form, notice, query;
-    private NoticeListFragment noticeFragment, FavFragment;
+    private NoticeListFragment noticeFragment, FavFragment,trashFragment;
     private BlankFragment FormblankFragment, QueryblankFragment;
     private String username, password;
-    private BUAAContentProvider buaaContentProvider, buaaFavContentProvider;
+    private BUAAContentProvider buaaContentProvider, buaaFavContentProvider,buaaTrashContentProvider;
     private RelativeLayout bottombar;
     public SQLiteUtils mySQLite;
-    private boolean NowForm = false, NowNotice = false, NowQuery = false;
+    private boolean NowForm = false, NowNotice = false, NowQuery = false,NowFav = false,NowTrash = false;
     private FragmentManager fm;
     private FragmentTransaction transaction;
     public Boolean Logining;
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity
         LoginActivity.setSQLiteLink(mySQLite);
         BUAAContentProvider.setSQLiteLink(mySQLite);
         DetailActivity.setSQLiteLink(mySQLite);
-
+        noticeFragment.setSqLiteUtils(mySQLite);
 
         Intent intent = new Intent();
         intent.setClass(MainActivity.this, LoginActivity.class);
@@ -171,6 +171,7 @@ public class MainActivity extends AppCompatActivity
         NowForm = false;
         NowQuery = false;
         noticeFragment = new NoticeListFragment();
+        noticeFragment.setSqLiteUtils(mySQLite);
         syncFramentAndIconChange_Notice(1);
         syncFramentAndIconChange_Form(0);
         syncFramentAndIconChange_Query(0);
@@ -291,7 +292,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
-        transaction = fm.beginTransaction();
+
         int id = item.getItemId();
         bottombar.setVisibility(View.GONE);
         if (id == R.id.nav_message) {
@@ -304,17 +305,12 @@ public class MainActivity extends AppCompatActivity
             transaction = fm.beginTransaction();
             if (FavFragment == null) {
                 FavFragment = new NoticeListFragment();
+                FavFragment.setSqLiteUtils(mySQLite);
                 buaaFavContentProvider = DataUtils.getContentProvider("FAV");
                 FavFragment.setProvider(buaaFavContentProvider);
                 FavFragment.setOnScrollListener(new ListScrollListener());
                 transaction.add(R.id.FragmentContainer, FavFragment);
             }
-
-            //Toast.makeText(this,username+" "+password,Toast.LENGTH_LONG).show();
-
-
-            //TODO:SET TRASH
-            //   FavFragment.setTrash(buaaTrashContentProvider);
             transaction.show(FavFragment);
             if (NowForm)
                 transaction.hide(FormblankFragment);
@@ -322,9 +318,14 @@ public class MainActivity extends AppCompatActivity
                 transaction.hide(noticeFragment);
             if (NowQuery)
                 transaction.hide(QueryblankFragment);
+            if (NowTrash)
+                transaction.hide(trashFragment);
+            NowTrash = false;
+            NowForm = true;
             transaction.commit();
         } else if (id == R.id.nav_back) {
             //还原主界面
+            transaction = fm.beginTransaction();
             bottombar.setVisibility(View.VISIBLE);
             if (FavFragment != null)
                 transaction.hide(FavFragment);
@@ -336,8 +337,29 @@ public class MainActivity extends AppCompatActivity
                 transaction.show(QueryblankFragment);
 
             transaction.commit();
+        }else if (id == R.id.nav_trash) {
+            transaction = fm.beginTransaction();
+            if (trashFragment == null) {
+                trashFragment = new NoticeListFragment();
+                trashFragment.setSqLiteUtils(mySQLite);
+                buaaTrashContentProvider = DataUtils.getContentProvider(BUAAContentProvider.Trash);
+                trashFragment.setProvider(buaaTrashContentProvider);
+                trashFragment.setOnScrollListener(new ListScrollListener());
+                transaction.add(R.id.FragmentContainer, trashFragment);
+            }
+            transaction.show(FavFragment);
+            if (NowForm)
+                transaction.hide(FormblankFragment);
+            if (NowNotice)
+                transaction.hide(noticeFragment);
+            if (NowQuery)
+                transaction.hide(QueryblankFragment);
+            if (NowFav)
+                transaction.hide(FavFragment);
+            NowTrash = true;
+            NowFav = false;
+            transaction.commit();
         }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

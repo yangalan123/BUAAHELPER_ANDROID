@@ -67,8 +67,14 @@ public class CommonItemForList {
         return ReceiveTime;
     }
 
+    //TODO (YCH,2017.2.8) Tell me the filename(including the suffix name) of the department icon
     public String getPathToImage() {
-        return PathToImage;
+        return "ic_star_border_black_24dp";
+    }
+    //TODO (YCH,2017.2.8) Tell me that whether it has been read
+    public boolean isread()
+    {
+        return true;
     }
 
 

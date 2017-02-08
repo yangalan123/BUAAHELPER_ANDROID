@@ -17,7 +17,11 @@
         <item
             android:id="@+id/nav_back"
             android:icon="@drawable/ic_assignment_return_black_24dp"
-            android:title="返回主菜单" />
+            android:title="主菜单" />
+        <item
+            android:id="@+id/nav_trash"
+            android:icon="@drawable/ic_undo_black_24dp"
+            android:title="查看并恢复删除通知" />
 
     </group>
 

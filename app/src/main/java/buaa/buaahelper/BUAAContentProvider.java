@@ -20,7 +20,8 @@ import java.util.ArrayList;
 
 public class BUAAContentProvider extends ContentProvider {
     //TODO: Accomplish all the methods here, all content in each method should be overwritten
-    public static final String FAV = "FAV", Notice = "NOTICE";
+    //TODO:(2017.2.8) 提供type为Trash的实例
+    public static final String FAV = "FAV", Notice = "NOTICE",Trash = "TRASH";
     private List<CommonItemForList> ITEMS = new ArrayList<CommonItemForList>();
     String username, password, type;
     private boolean isfirst = true;
@@ -29,6 +30,10 @@ public class BUAAContentProvider extends ContentProvider {
 
     public static void setSQLiteLink(SQLiteUtils link) {
         SQLiteLink = link;
+    }
+
+    public String getType() {
+        return type;
     }
 
     public void setBuaa_recyclerViewAdapter(BUAA_RecyclerViewAdapter buaa_recyclerViewAdapter) {
@@ -167,7 +172,7 @@ public class BUAAContentProvider extends ContentProvider {
             if (!type.equals(FAV)) {
 
                 ITEMS.clear();
-                //buaa_recyclerViewAdapter.notifyDataSetChanged();   //bug fixed
+                //  //bug fixed
                 String t = "";
                 t = SQLiteLink.GetNotificationsOrderByUpdateTime(0, 25, ClientUtils.getUser());
                 switch (t) {
@@ -190,6 +195,7 @@ public class BUAAContentProvider extends ContentProvider {
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
+                        buaa_recyclerViewAdapter.notifyDataSetChanged();
                         break;
                 }
 
@@ -197,7 +203,7 @@ public class BUAAContentProvider extends ContentProvider {
             } else {
 
                 ITEMS.clear();
-                buaa_recyclerViewAdapter.notifyDataSetChanged();
+
                 String t = "";
                 t = SQLiteLink.GetFAVNotificationsOrderByUpdateTime(0, 25, ClientUtils.getUser());
                 switch (t) {
@@ -220,6 +226,7 @@ public class BUAAContentProvider extends ContentProvider {
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
+                        buaa_recyclerViewAdapter.notifyDataSetChanged();
                         break;
 
                 }
