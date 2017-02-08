@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_ea0c94d7573a18ebb010f3b8e9f2a0390f1cfe4a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\alan_yang\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.1_88c8220de962b3593827814cc657b4965f5eb91f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-8.4.0_f6a723ad63141b5ce0bc2a8d4039145cef60eb7e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\pre-dexed\debug\com.android.support-design-24.2.1_edf277f046c36ae2b15a375d5e0b0a60010ef7dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_e5ab36d735f86d1b989deaa91d423d3f5fb20f94.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-8.4.0_c8e70c6d6a073f8d648cb9ebae2932fd569f0d45.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="7684c386da25dbbc0df45e602024bd83d44c339c">
+        <dex dex="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_8735863acc3671f2d6fdaf430f734e94f5877178.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_c82149abaa1af3824f592a8d72e904f37813c7ce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.1_23541e6467b9a2c0509e1cba0454be0e1acfa8d2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e8d1d0a8e0e44ee51b249359e17f737af2450a24">
+        <dex dex="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\pre-dexed\debug\instant-run_7a3bf13297fdf469138b17e742890e8db495776f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_5905601cae46ba893b3e86918c8c6fda251e1569.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.1_dbdf07b0f20076bbb3d28796c56af8c9b498b1f9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-24.2.1_0eca532fec528517715a75722a629882e2cd320f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_5922bbf049b066b418c5a9b5f7eb79e2f98c5c43.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appindexing-8.4.0_b218551e8503a0faf370de974b204596452a524c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_c0c573b59efa4d75d5356b58a2dd4628e10af13a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_4c69742972b454fd5567ce4a85eb3683a14c185d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_f88935bd29225053b9c6e5df54931b81c79f00dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_0a0d85a7c007ad2e26f0e546b7f9d1731d11126e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.1_3fa5ecade71fe4fbdbe8032d86fac57633f67abd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_be0f96f2beb33b92cd28ddd7d7c4cb08c0eaab0c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="G:\AndroidExample0\BUAAHELPER\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.1_22b8c190b1eb071444540bd1ef67bd9fdae0feb1.jar" />
+    </item>
+
+</items>

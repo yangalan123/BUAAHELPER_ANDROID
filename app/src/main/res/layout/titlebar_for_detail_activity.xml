@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    >
+<ImageButton
+android:id="@+id/goback"
+android:layout_width="40dp"
+android:layout_height="40dp"
+android:layout_centerVertical="true"
+android:layout_alignParentLeft="true"
+android:layout_marginLeft="20dp"
+    android:background="@null"
+android:src="@drawable/ic_assignment_return_black_24dp" />
+
+<TextView
+android:layout_centerInParent="true"
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:id="@+id/titlebarText"
+android:textSize="20sp"
+    android:text="Title"
+android:gravity="center_vertical"
+    />
+<ImageButton
+android:id="@+id/fav"
+android:layout_width="40dp"
+android:layout_height="40dp"
+    android:layout_alignParentRight="true"
+android:layout_marginRight="20dp"
+    android:background="@null"
+android:src="@mipmap/ic_star_border_black_24dp"
+
+
+    android:layout_centerVertical="true" />
+
+    </RelativeLayout>

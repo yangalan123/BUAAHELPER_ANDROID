@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="titleBarStyle" parent="Theme.AppCompat">
+        <item name="android:windowTitleSize">50dp</item><!-- 原始标题栏的高度 -->
+        <item name="android:padding">0dp</item><!-- 使新的标题栏完全延伸到对齐到原始标题栏的两边 -->
+    </style>
+
+    <style name="BUAAcustom" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="android:colorBackground">@color/buaa_custom_blue</item>
+        <item name="android:windowBackground">@color/buaa_custom_blue</item>
+        <item name="colorPrimary">@color/buaa_custom_blue</item>
+    </style>
+</resources>

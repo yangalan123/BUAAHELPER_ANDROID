@@ -1,0 +1,7 @@
+1. Delete function bug
+（didn't inform provider, just delete it in the copy of the reference of ITEMS）
+2. https://code.google.com/p/android/issues/detail?id=77232
+    (#37)(快速拉动时的bug，目前通过provider和adapter的互相绑定缓解问题，后期
+    可能需要中间件)
+  https://drakeet.me/recyclerview-bug-indexoutofboundsexception-inconsistency-detected-invalid-item-position-solution
+   （不太推荐，但是问题解释的比较清楚）
